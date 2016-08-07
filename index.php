@@ -15,4 +15,4 @@ function showFullName($name,$surname)
     return showName($name) . showSurname($surname);
 }
 
-echo showFullName('Ihor', 'Moroz');
+echo showFullName('', '');
