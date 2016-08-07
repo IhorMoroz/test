@@ -7,5 +7,12 @@ function showName($name = 'Anonim')
 
 function showSurname($surname = '')
 {
-    return $surname;
+    return  ' ' . $surname;
 }
+
+function showFullName($name,$surname)
+{
+    return showName($name) . showSurname($surname);
+}
+
+echo showFullName('Ihor', 'Moroz');
