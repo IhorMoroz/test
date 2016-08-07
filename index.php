@@ -2,5 +2,10 @@
 
 function showName($name = 'Anonim')
 {
-    return $name;
+    return "Hello - " . $name;
+}
+
+function showSurname($surname = '')
+{
+    return $surname;
 }
