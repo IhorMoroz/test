@@ -31,4 +31,13 @@ function showFullName($name,$surname)
     return showName($name) . showSurname($surname);
 }
 
+/**
+ * @param int $age
+ * @return int
+ */
+function showAge($age = 0)
+{
+    return $age;
+}
+
 echo showFullName('', '');
