@@ -1,44 +1,25 @@
 <?php
 
-/**
- * [showName description]
- * @param  string $name [description]
- * @return [type]       [description]
- */
-function showName($name = 'Anonim')
-{
-    return "Hello - " . $name;
-}
+class User {
+    private $name = 'Guest';
+    private $surname = '';
+    private $email = '';
 
-/**
- * [showSurname description]
- * @param  string $surname [description]
- * @return [type]          [description]
- */
-function showSurname($surname = '')
-{
-    return  ' ' . $surname;
-}
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
-/**
- * [showFullName]
- * @param  [string] $name    [user name]
- * @param  [string] $surname [user surname]
- * @return [string]          [user full name]
- */
-function showFullName($name,$surname)
-{
-    return showName($name) . showSurname($surname);
-}
+    /**
+     * @param $name
+     */
+    public function setName($name)
+    {
+        $this->name = strip_tags($name);
+    }
 
-/**
- * get age
- * @param int $age
- * @return int
- */
-function showAge($age = 0)
-{
-    return $age;
+    
 }
-
-echo showFullName('', '');
